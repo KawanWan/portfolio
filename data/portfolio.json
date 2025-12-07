@@ -1,0 +1,156 @@
+{
+  "personal": {
+    "name": "Seu Nome",
+    "title": "Desenvolvedor Full Stack",
+    "subtitle": "Especialista em Laravel & Next.js",
+    "bio": "Desenvolvedor apaixonado por criar soluções web escaláveis e elegantes. Com experiência em PHP, JavaScript e frameworks modernos, transformo ideias em produtos digitais de alta qualidade.",
+    "location": "Brasil",
+    "email": "seu.email@example.com",
+    "phone": "+55 (11) 99999-9999",
+    "availability": "Disponível para projetos",
+    "social": {
+      "github": "https://github.com/seuusuario",
+      "linkedin": "https://linkedin.com/in/seuusuario",
+      "twitter": "https://twitter.com/seuusuario",
+      "portfolio": "https://seuportfolio.com"
+    }
+  },
+  "skills": [
+    {
+      "category": "Backend",
+      "items": [
+        { "name": "Laravel", "level": 90, "icon": "🐘" },
+        { "name": "PHP", "level": 85, "icon": "🐘" },
+        { "name": "Node.js", "level": 75, "icon": "🟢" },
+        { "name": "API REST", "level": 90, "icon": "🔌" },
+        { "name": "MySQL", "level": 80, "icon": "🗄️" },
+        { "name": "PostgreSQL", "level": 75, "icon": "🐘" }
+      ]
+    },
+    {
+      "category": "Frontend",
+      "items": [
+        { "name": "Next.js", "level": 85, "icon": "⚛️" },
+        { "name": "React", "level": 85, "icon": "⚛️" },
+        { "name": "TypeScript", "level": 80, "icon": "📘" },
+        { "name": "Tailwind CSS", "level": 90, "icon": "🎨" },
+        { "name": "JavaScript", "level": 85, "icon": "📜" }
+      ]
+    },
+    {
+      "category": "DevOps & Tools",
+      "items": [
+        { "name": "Git", "level": 85, "icon": "🔧" },
+        { "name": "Docker", "level": 70, "icon": "🐳" },
+        { "name": "CI/CD", "level": 65, "icon": "🚀" },
+        { "name": "Linux", "level": 75, "icon": "🐧" }
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "id": "blog-platform",
+      "title": "Blog Frontend",
+      "description": "Plataforma moderna de blog desenvolvida com Next.js 15, React 19 e Tailwind CSS. Interface responsiva e otimizada para SEO.",
+      "longDescription": "Sistema completo de blog com interface elegante e moderna. Implementa as melhores práticas de desenvolvimento frontend, incluindo SSR (Server-Side Rendering), otimização de imagens e componentização avançada.",
+      "image": "/projects/blog.jpg",
+      "tags": ["Next.js", "React", "TypeScript", "Tailwind CSS"],
+      "category": "Frontend",
+      "github": "https://github.com/seuusuario/blog-frontend",
+      "demo": "https://blog-demo.vercel.app",
+      "featured": true,
+      "year": 2024,
+      "features": [
+        "Interface moderna e responsiva",
+        "Otimizado para SEO",
+        "Sistema de categorias",
+        "Dark mode",
+        "Carregamento otimizado"
+      ]
+    },
+    {
+      "id": "ecommerce-laravel",
+      "title": "E-commerce Laravel",
+      "description": "Plataforma completa de e-commerce com Laravel, incluindo painel administrativo, carrinho de compras e integração de pagamentos.",
+      "longDescription": "Sistema robusto de e-commerce desenvolvido com Laravel. Inclui gestão completa de produtos, pedidos, clientes e relatórios.",
+      "image": "/projects/ecommerce.jpg",
+      "tags": ["Laravel", "PHP", "MySQL", "Bootstrap"],
+      "category": "Full Stack",
+      "github": "https://github.com/seuusuario/ecommerce-laravel",
+      "demo": null,
+      "featured": true,
+      "year": 2024,
+      "features": [
+        "Painel administrativo completo",
+        "Carrinho de compras avançado",
+        "Integração com gateways de pagamento",
+        "Sistema de cupons",
+        "Relatórios e analytics"
+      ]
+    },
+    {
+      "id": "api-restful",
+      "title": "API RESTful",
+      "description": "API RESTful escalável desenvolvida com Laravel, incluindo autenticação JWT, documentação automática e testes.",
+      "longDescription": "API robusta seguindo padrões REST, com documentação completa, autenticação segura e cobertura de testes.",
+      "image": "/projects/api.jpg",
+      "tags": ["Laravel", "API", "JWT", "MySQL"],
+      "category": "Backend",
+      "github": "https://github.com/seuusuario/api-restful",
+      "demo": null,
+      "featured": false,
+      "year": 2023,
+      "features": [
+        "Autenticação JWT",
+        "Documentação Swagger",
+        "Rate limiting",
+        "Versionamento de API",
+        "Testes automatizados"
+      ]
+    },
+    {
+      "id": "dashboard-react",
+      "title": "Dashboard Analytics",
+      "description": "Dashboard interativo para visualização de dados com React e Chart.js, incluindo gráficos em tempo real.",
+      "longDescription": "Painel de controle moderno com visualização de dados em tempo real, gráficos interativos e interface intuitiva.",
+      "image": "/projects/dashboard.jpg",
+      "tags": ["React", "Chart.js", "TypeScript", "Tailwind"],
+      "category": "Frontend",
+      "github": "https://github.com/seuusuario/dashboard",
+      "demo": "https://dashboard-demo.vercel.app",
+      "featured": false,
+      "year": 2023,
+      "features": [
+        "Gráficos interativos",
+        "Atualização em tempo real",
+        "Filtros avançados",
+        "Exportação de dados",
+        "Interface responsiva"
+      ]
+    }
+  ],
+  "experience": [
+    {
+      "company": "Empresa Tech",
+      "position": "Desenvolvedor Full Stack",
+      "period": "2023 - Presente",
+      "description": "Desenvolvimento de aplicações web com Laravel e React, implementação de APIs RESTful e manutenção de sistemas legados.",
+      "technologies": ["Laravel", "React", "MySQL", "Docker"]
+    },
+    {
+      "company": "Startup Digital",
+      "position": "Desenvolvedor Backend",
+      "period": "2022 - 2023",
+      "description": "Desenvolvimento de APIs escaláveis, otimização de queries e implementação de microserviços.",
+      "technologies": ["PHP", "Node.js", "PostgreSQL", "Redis"]
+    }
+  ],
+  "education": [
+    {
+      "institution": "Universidade Federal",
+      "degree": "Bacharelado em Ciência da Computação",
+      "period": "2019 - 2023",
+      "description": "Formação completa em desenvolvimento de software, algoritmos e estruturas de dados."
+    }
+  ]
+}
