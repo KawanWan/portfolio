@@ -1,17 +1,16 @@
 {
   "personal": {
-    "name": "Seu Nome",
+    "name": "Kawan Wan",
     "title": "Desenvolvedor Full Stack",
-    "subtitle": "Especialista em Laravel & Next.js",
+    "subtitle": "Especialista em  Next.js & Laravel",
     "bio": "Desenvolvedor apaixonado por criar soluções web escaláveis e elegantes. Com experiência em PHP, JavaScript e frameworks modernos, transformo ideias em produtos digitais de alta qualidade.",
     "location": "Brasil",
-    "email": "seu.email@example.com",
-    "phone": "+55 (11) 99999-9999",
+    "email": "kawan.wan18@gmail.com",
+    "phone": "+55 (15) 99604-9722",
     "availability": "Disponível para projetos",
     "social": {
-      "github": "https://github.com/seuusuario",
-      "linkedin": "https://linkedin.com/in/seuusuario",
-      "twitter": "https://twitter.com/seuusuario",
+      "github": "https://github.com/KawanWan",
+      "linkedin": "https://www.linkedin.com/in/kawan-wan-der-maas-do-nascimento-56a53a208/",
       "portfolio": "https://seuportfolio.com"
     }
   },
@@ -19,31 +18,30 @@
     {
       "category": "Backend",
       "items": [
-        { "name": "Laravel", "level": 90, "icon": "🐘" },
-        { "name": "PHP", "level": 85, "icon": "🐘" },
-        { "name": "Node.js", "level": 75, "icon": "🟢" },
-        { "name": "API REST", "level": 90, "icon": "🔌" },
-        { "name": "MySQL", "level": 80, "icon": "🗄️" },
-        { "name": "PostgreSQL", "level": 75, "icon": "🐘" }
+        { "name": "Laravel", "level": 90, "icon": "/icons/laravel.svg" },
+        { "name": "PHP", "level": 85, "icon": "/icons/php.svg" },
+        { "name": "Node.js", "level": 75, "icon": "/icons/node-js.svg" },
+        { "name": "API REST", "level": 90, "icon": "/icons/api.png" },
+        { "name": "MySQL", "level": 80, "icon": "/icons/mysql.svg" },
+        { "name": "PostgreSQL", "level": 75, "icon": "/icons/postgresql.svg" }
       ]
     },
     {
       "category": "Frontend",
       "items": [
-        { "name": "Next.js", "level": 85, "icon": "⚛️" },
-        { "name": "React", "level": 85, "icon": "⚛️" },
-        { "name": "TypeScript", "level": 80, "icon": "📘" },
-        { "name": "Tailwind CSS", "level": 90, "icon": "🎨" },
-        { "name": "JavaScript", "level": 85, "icon": "📜" }
+        { "name": "Next.js", "level": 85, "icon": "/icons/next-js.svg" },
+        { "name": "React", "level": 85, "icon": "/icons/react.svg" },
+        { "name": "TypeScript", "level": 80, "icon": "/icons/typescript.svg" },
+        { "name": "Tailwind CSS", "level": 90, "icon": "/icons/tailwind.svg" },
+        { "name": "JavaScript", "level": 85, "icon": "/icons/javascript.svg" }
       ]
     },
     {
       "category": "DevOps & Tools",
       "items": [
-        { "name": "Git", "level": 85, "icon": "🔧" },
-        { "name": "Docker", "level": 70, "icon": "🐳" },
+        { "name": "Git", "level": 85, "icon": "/icons/git.svg" },
         { "name": "CI/CD", "level": 65, "icon": "🚀" },
-        { "name": "Linux", "level": 75, "icon": "🐧" }
+        { "name": "Cloud", "level": 65, "icon": "☁️" }
       ]
     }
   ],

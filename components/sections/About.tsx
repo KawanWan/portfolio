@@ -41,7 +41,7 @@ export default function About({ bio, location, availability }: AboutProps) {
           <Card hover>
             <div className="text-center">
               <div className="text-4xl font-bold text-blue-600 dark:text-blue-400 mb-2">
-                4+
+                2+
               </div>
               <div className="text-gray-600 dark:text-gray-400">
                 Anos de Experiência
@@ -51,22 +51,11 @@ export default function About({ bio, location, availability }: AboutProps) {
           
           <Card hover>
             <div className="text-center">
-              <div className="text-4xl font-bold text-purple-600 dark:text-purple-400 mb-2">
-                50+
+              <div className="text-4xl font-bold text-blue-600 dark:text-blue-400 mb-2">
+                20+
               </div>
               <div className="text-gray-600 dark:text-gray-400">
                 Projetos Concluídos
-              </div>
-            </div>
-          </Card>
-          
-          <Card hover>
-            <div className="text-center">
-              <div className="text-4xl font-bold text-green-600 dark:text-green-400 mb-2">
-                30+
-              </div>
-              <div className="text-gray-600 dark:text-gray-400">
-                Clientes Satisfeitos
               </div>
             </div>
           </Card>

@@ -25,7 +25,7 @@ export default function Section({
         {(title || subtitle) && (
           <div className="text-center mb-16">
             {subtitle && (
-              <p className="text-blue-600 dark:text-blue-400 font-semibold mb-2 uppercase tracking-wide text-sm">
+              <p className="text-blue-700 dark:text-blue-500 font-semibold mb-2 uppercase tracking-wide text-sm">
                 {subtitle}
               </p>
             )}
@@ -34,7 +34,7 @@ export default function Section({
                 {title}
               </h2>
             )}
-            <div className="w-24 h-1 bg-gradient-to-r from-blue-600 to-purple-600 mx-auto rounded-full"></div>
+            <div className="h-1 w-24 bg-gradient-to-r from-blue-800 to-blue-600 rounded-full mx-auto"></div>
           </div>
         )}
         {children}

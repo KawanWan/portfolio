@@ -5,7 +5,7 @@ export const metadata: Metadata = {
   title: 'Portfólio - Desenvolvedor Full Stack',
   description: 'Portfólio profissional de desenvolvedor Full Stack especializado em Laravel e Next.js',
   keywords: ['portfólio', 'desenvolvedor', 'full stack', 'Laravel', 'Next.js', 'React'],
-  authors: [{ name: 'Seu Nome' }],
+  authors: [{ name: 'Kawan Wan' }],
   openGraph: {
     title: 'Portfólio - Desenvolvedor Full Stack',
     description: 'Portfólio profissional de desenvolvedor Full Stack',

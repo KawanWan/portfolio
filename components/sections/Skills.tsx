@@ -1,6 +1,8 @@
 import React from 'react';
+import Image from 'next/image';
 import Section from '../ui/Section';
-import Card from '../ui/Card';
+// Removemos a importação do Card pois faremos uma estrutura personalizada
+// import Card from '../ui/Card'; 
 
 interface Skill {
   name: string;
@@ -19,39 +21,53 @@ interface SkillsProps {
 
 export default function Skills({ skills }: SkillsProps) {
   return (
-    <Section id="skills" title="Habilidades" subtitle="Tecnologias" background="gray">
+    <Section id="skills" title="Habilidades" subtitle="Tecnologias" background="white">
       <div className="grid md:grid-cols-3 gap-8">
         {skills.map((category, index) => (
-          <Card key={index} hover>
-            <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-6 flex items-center gap-2">
-              <span className="text-3xl">
-                {category.category === 'Backend' ? '⚙️' : 
-                 category.category === 'Frontend' ? '🎨' : '🛠️'}
-              </span>
-              {category.category}
-            </h3>
-            <div className="space-y-4">
-              {category.items.map((skill, skillIndex) => (
-                <div key={skillIndex} className="space-y-2">
-                  <div className="flex justify-between items-center">
-                    <span className="text-gray-700 dark:text-gray-300 font-medium flex items-center gap-2">
-                      <span>{skill.icon}</span>
-                      {skill.name}
-                    </span>
-                    <span className="text-sm text-gray-500 dark:text-gray-400">
-                      {skill.level}%
-                    </span>
-                  </div>
-                  <div className="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-2 overflow-hidden">
-                    <div
-                      className="bg-gradient-to-r from-blue-600 to-purple-600 h-2 rounded-full transition-all duration-1000 ease-out"
-                      style={{ width: `${skill.level}%` }}
-                    ></div>
-                  </div>
-                </div>
-              ))}
+          <div 
+            key={index} 
+            className="bg-white dark:bg-gray-900 rounded-2xl border border-gray-200 dark:border-gray-800 shadow-sm overflow-hidden hover:shadow-md transition-shadow duration-300 flex flex-col"
+          >
+            
+            <div className="bg-blue-600 dark:bg-gray-800/50 py-4 px-6 border-b border-gray-100 dark:border-gray-700">
+              <h3 className="text-xl font-bold text-center text-gray-50 dark:text-white tracking-tight">
+                {category.category}
+              </h3>
             </div>
-          </Card>
+
+            <div className="p-6 flex-grow">
+              <div className="flex flex-wrap justify-center gap-3">
+                {category.items.map((skill, skillIndex) => {
+                  const isImagePath = skill.icon.startsWith('/') || skill.icon.startsWith('http');
+
+                  return (
+                    <div 
+                      key={skillIndex} 
+                      className="flex items-center gap-2 px-3 py-2 bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg hover:border-blue-500 hover:text-blue-600 transition-all duration-300"
+                    >
+                      {isImagePath ? (
+                        <div className="relative w-5 h-5">
+                          <Image
+                            src={skill.icon}
+                            alt={`Ícone ${skill.name}`}
+                            fill
+                            className="object-contain"
+                            sizes="20px"
+                          />
+                        </div>
+                      ) : (
+                        <span className="text-lg leading-none">{skill.icon}</span>
+                      )}
+
+                      <span className="text-gray-700 dark:text-gray-200 font-medium text-sm group-hover:text-blue-600">
+                        {skill.name}
+                      </span>
+                    </div>
+                  );
+                })}
+              </div>
+            </div>
+          </div>
         ))}
       </div>
     </Section>
