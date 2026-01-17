@@ -5,6 +5,7 @@ import Section from '../ui/Section';
 import Card from '../ui/Card';
 import Button from '../ui/Button';
 import Badge from '../ui/Badge';
+import Image from 'next/image';
 
 interface Project {
   id: string;
@@ -29,50 +30,57 @@ export default function Projects({ projects }: ProjectsProps) {
   const [filter, setFilter] = useState<string>('all');
   const [selectedProject, setSelectedProject] = useState<Project | null>(null);
 
-  // Get unique categories
   const categories = ['all', ...Array.from(new Set(projects.map(p => p.category)))];
 
-  // Filter projects
-  const filteredProjects = filter === 'all' 
-    ? projects 
+  const filteredProjects = filter === 'all'
+    ? projects
     : projects.filter(p => p.category === filter);
 
   return (
     <Section id="projects" title="Projetos" subtitle="Meu Portfólio" background="white">
-      {/* Filter Buttons */}
       <div className="flex flex-wrap gap-3 justify-center mb-12">
         {categories.map((category) => (
           <button
             key={category}
             onClick={() => setFilter(category)}
-            className={`px-6 py-2 rounded-full font-medium transition-all duration-200 ${
-              filter === category
-                ? 'bg-blue-600 text-white shadow-lg scale-105'
-                : 'bg-gray-200 dark:bg-gray-700 text-gray-700 dark:text-gray-300 hover:bg-gray-300 dark:hover:bg-gray-600'
-            }`}
+            className={`px-6 py-2 rounded-full font-medium transition-all duration-200 ${filter === category
+              ? 'bg-blue-600 text-white shadow-lg scale-105'
+              : 'bg-gray-200 dark:bg-gray-700 text-gray-700 dark:text-gray-300 hover:bg-gray-300 dark:hover:bg-gray-600'
+              }`}
           >
             {category === 'all' ? 'Todos' : category}
           </button>
         ))}
       </div>
 
-      {/* Projects Grid */}
       <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
         {filteredProjects.map((project) => (
           <Card key={project.id} hover>
-            <div className="space-y-4">
-              {/* Project Image */}
-              <div className="relative h-48 bg-gradient-to-br from-blue-400 to-purple-600 rounded-lg overflow-hidden flex items-center justify-center">
-                <span className="text-6xl">{project.featured ? '⭐' : '📁'}</span>
+            <div className="flex flex-col h-full">
+
+              <div className="relative h-48 rounded-lg overflow-hidden mb-4 bg-gray-100">
+                {project.image ? (
+                  <Image
+                    src={project.image}
+                    alt={project.title}
+                    fill
+                    className="object-contain hover:scale-105 transition-transform duration-300"
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                  />
+                ) : (
+                  <div className="w-full h-full bg-gradient-to-br from-blue-400 to-purple-600 flex items-center justify-center">
+                    <span className="text-6xl">{project.featured ? '⭐' : '📁'}</span>
+                  </div>
+                )}
+
                 {project.featured && (
-                  <div className="absolute top-2 right-2">
+                  <div className="absolute top-2 right-2 z-10">
                     <Badge variant="warning">Destaque</Badge>
                   </div>
                 )}
               </div>
 
-              {/* Project Info */}
-              <div>
+              <div className="mb-4">
                 <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-2">
                   {project.title}
                 </h3>
@@ -81,8 +89,7 @@ export default function Projects({ projects }: ProjectsProps) {
                 </p>
               </div>
 
-              {/* Tags */}
-              <div className="flex flex-wrap gap-2">
+              <div className="flex flex-wrap gap-2 mb-4">
                 {project.tags.slice(0, 3).map((tag, index) => (
                   <Badge key={index} variant="secondary">
                     {tag}
@@ -93,12 +100,11 @@ export default function Projects({ projects }: ProjectsProps) {
                 )}
               </div>
 
-              {/* Actions */}
-              <div className="flex gap-2 pt-4">
+              <div className="flex gap-2 pt-4 mt-auto border-t border-gray-100 dark:border-gray-700">
                 {project.github && (
-                  <Button 
-                    variant="outline" 
-                    size="sm" 
+                  <Button
+                    variant="outline"
+                    size="sm"
                     href={project.github}
                     className="flex-1"
                   >
@@ -106,18 +112,18 @@ export default function Projects({ projects }: ProjectsProps) {
                   </Button>
                 )}
                 {project.demo && (
-                  <Button 
-                    variant="primary" 
-                    size="sm" 
+                  <Button
+                    variant="primary"
+                    size="sm"
                     href={project.demo}
                     className="flex-1"
                   >
                     Demo
                   </Button>
                 )}
-                <Button 
-                  variant="secondary" 
-                  size="sm" 
+                <Button
+                  variant="secondary"
+                  size="sm"
                   onClick={() => setSelectedProject(project)}
                   className="flex-1"
                 >
@@ -129,18 +135,16 @@ export default function Projects({ projects }: ProjectsProps) {
         ))}
       </div>
 
-      {/* Project Modal */}
       {selectedProject && (
-        <div 
+        <div
           className="fixed inset-0 bg-black bg-opacity-50 z-50 flex items-center justify-center p-4"
           onClick={() => setSelectedProject(null)}
         >
-          <div 
+          <div
             className="bg-white dark:bg-gray-800 rounded-xl max-w-2xl w-full max-h-[90vh] overflow-y-auto shadow-2xl"
             onClick={(e) => e.stopPropagation()}
           >
             <div className="p-6 space-y-6">
-              {/* Header */}
               <div className="flex justify-between items-start">
                 <div>
                   <h3 className="text-3xl font-bold text-gray-900 dark:text-white mb-2">
@@ -158,12 +162,10 @@ export default function Projects({ projects }: ProjectsProps) {
                 </button>
               </div>
 
-              {/* Description */}
               <p className="text-gray-700 dark:text-gray-300 text-lg">
                 {selectedProject.longDescription}
               </p>
 
-              {/* Features */}
               {selectedProject.features && selectedProject.features.length > 0 && (
                 <div>
                   <h4 className="text-xl font-bold text-gray-900 dark:text-white mb-3">
@@ -180,7 +182,6 @@ export default function Projects({ projects }: ProjectsProps) {
                 </div>
               )}
 
-              {/* Technologies */}
               <div>
                 <h4 className="text-xl font-bold text-gray-900 dark:text-white mb-3">
                   Tecnologias
@@ -194,7 +195,6 @@ export default function Projects({ projects }: ProjectsProps) {
                 </div>
               </div>
 
-              {/* Links */}
               <div className="flex gap-3 pt-4">
                 {selectedProject.github && (
                   <Button variant="outline" href={selectedProject.github} className="flex-1">

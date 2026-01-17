@@ -1,8 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
 import Section from '../ui/Section';
-// Removemos a importação do Card pois faremos uma estrutura personalizada
-// import Card from '../ui/Card'; 
 
 interface Skill {
   name: string;

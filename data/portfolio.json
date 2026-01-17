@@ -2,7 +2,7 @@
   "personal": {
     "name": "Kawan Wan",
     "title": "Desenvolvedor Full Stack",
-    "subtitle": "Especialista em  Next.js & Laravel",
+    "subtitle": "Especialista em transformar ideias em soluções digitais eficientes e de alta qualidade.",
     "bio": "Desenvolvedor apaixonado por criar soluções web escaláveis e elegantes. Com experiência em PHP, JavaScript e frameworks modernos, transformo ideias em produtos digitais de alta qualidade.",
     "location": "Brasil",
     "email": "kawan.wan18@gmail.com",
@@ -11,37 +11,94 @@
     "social": {
       "github": "https://github.com/KawanWan",
       "linkedin": "https://www.linkedin.com/in/kawan-wan-der-maas-do-nascimento-56a53a208/",
-      "portfolio": "https://seuportfolio.com"
+      "portfolio": "https://seuportfolio.com",
+      "whatsapp": "5515996049722"
     }
   },
   "skills": [
     {
       "category": "Backend",
       "items": [
-        { "name": "Laravel", "level": 90, "icon": "/icons/laravel.svg" },
-        { "name": "PHP", "level": 85, "icon": "/icons/php.svg" },
-        { "name": "Node.js", "level": 75, "icon": "/icons/node-js.svg" },
-        { "name": "API REST", "level": 90, "icon": "/icons/api.png" },
-        { "name": "MySQL", "level": 80, "icon": "/icons/mysql.svg" },
-        { "name": "PostgreSQL", "level": 75, "icon": "/icons/postgresql.svg" }
+        {
+          "name": "Laravel",
+          "level": 90,
+          "icon": "/icons/laravel.svg"
+        },
+        {
+          "name": "PHP",
+          "level": 85,
+          "icon": "/icons/php.svg"
+        },
+        {
+          "name": "Node.js",
+          "level": 75,
+          "icon": "/icons/node-js.svg"
+        },
+        {
+          "name": "API REST",
+          "level": 90,
+          "icon": "/icons/api.png"
+        },
+        {
+          "name": "MySQL",
+          "level": 80,
+          "icon": "/icons/mysql.svg"
+        },
+        {
+          "name": "PostgreSQL",
+          "level": 75,
+          "icon": "/icons/postgresql.svg"
+        }
       ]
     },
     {
       "category": "Frontend",
       "items": [
-        { "name": "Next.js", "level": 85, "icon": "/icons/next-js.svg" },
-        { "name": "React", "level": 85, "icon": "/icons/react.svg" },
-        { "name": "TypeScript", "level": 80, "icon": "/icons/typescript.svg" },
-        { "name": "Tailwind CSS", "level": 90, "icon": "/icons/tailwind.svg" },
-        { "name": "JavaScript", "level": 85, "icon": "/icons/javascript.svg" }
+        {
+          "name": "Next.js",
+          "level": 85,
+          "icon": "/icons/next-js.svg"
+        },
+        {
+          "name": "React",
+          "level": 85,
+          "icon": "/icons/react.svg"
+        },
+        {
+          "name": "TypeScript",
+          "level": 80,
+          "icon": "/icons/typescript.svg"
+        },
+        {
+          "name": "Tailwind CSS",
+          "level": 90,
+          "icon": "/icons/tailwind.svg"
+        },
+        {
+          "name": "JavaScript",
+          "level": 85,
+          "icon": "/icons/javascript.svg"
+        }
       ]
     },
     {
       "category": "DevOps & Tools",
       "items": [
-        { "name": "Git", "level": 85, "icon": "/icons/git.svg" },
-        { "name": "CI/CD", "level": 65, "icon": "🚀" },
-        { "name": "Cloud", "level": 65, "icon": "☁️" }
+        {
+          "name": "Git",
+          "level": 85,
+          "icon": "/icons/git.svg"
+        },
+        {
+          "name": "CI/CD",
+          "level": 65,
+          "icon": "🚀"
+        },
+        {
+          "name": "Cloud",
+          "level": 65,
+          "icon": "☁️"
+        }
       ]
     }
   ],
@@ -50,12 +107,17 @@
       "id": "blog-platform",
       "title": "Blog Frontend",
       "description": "Plataforma moderna de blog desenvolvida com Next.js 15, React 19 e Tailwind CSS. Interface responsiva e otimizada para SEO.",
-      "longDescription": "Sistema completo de blog com interface elegante e moderna. Implementa as melhores práticas de desenvolvimento frontend, incluindo SSR (Server-Side Rendering), otimização de imagens e componentização avançada.",
-      "image": "/projects/blog.jpg",
-      "tags": ["Next.js", "React", "TypeScript", "Tailwind CSS"],
+      "longDescription": "Sistema completo de blog com artigos, interface elegante e moderna. Implementa as melhores práticas de desenvolvimento frontend, incluindo SSR (Server-Side Rendering), otimização de imagens e componentização avançada.",
+      "image": "/projects/blog.png",
+      "tags": [
+        "Next.js",
+        "React",
+        "TypeScript",
+        "Tailwind CSS"
+      ],
       "category": "Frontend",
-      "github": "https://github.com/seuusuario/blog-frontend",
-      "demo": "https://blog-demo.vercel.app",
+      "github": "https://github.com/KawanWan/blog-frontend",
+      "demo": null,
       "featured": true,
       "year": 2024,
       "features": [
@@ -67,63 +129,56 @@
       ]
     },
     {
-      "id": "ecommerce-laravel",
-      "title": "E-commerce Laravel",
-      "description": "Plataforma completa de e-commerce com Laravel, incluindo painel administrativo, carrinho de compras e integração de pagamentos.",
-      "longDescription": "Sistema robusto de e-commerce desenvolvido com Laravel. Inclui gestão completa de produtos, pedidos, clientes e relatórios.",
-      "image": "/projects/ecommerce.jpg",
-      "tags": ["Laravel", "PHP", "MySQL", "Bootstrap"],
-      "category": "Full Stack",
-      "github": "https://github.com/seuusuario/ecommerce-laravel",
+      "id": "blog-backend",
+      "title": "Blog Backend API",
+      "description": "API RESTful completa desenvolvida com Node.js, Express e TypeScript.",
+      "longDescription": "Sistema backend robusto para gerenciamento de blog. Conta com autenticação segura via JWT, fluxo completo de recuperação de senha por e-mail (SMTP), upload e processamento de imagens em memória e integração com banco de dados MySQL via Prisma ORM.",
+      "image": "/projects/blog.png",
+      "tags": [
+        "Node.js",
+        "TypeScript",
+        "Express",
+        "Prisma",
+        "MySQL"
+      ],
+      "category": "Backend",
+      "github": "https://github.com/KawanWan/blog-backend",
       "demo": null,
       "featured": true,
       "year": 2024,
       "features": [
-        "Painel administrativo completo",
-        "Carrinho de compras avançado",
-        "Integração com gateways de pagamento",
-        "Sistema de cupons",
-        "Relatórios e analytics"
+        "Autenticação JWT e Criptografia Bcrypt",
+        "Recuperação de senha com envio de E-mail",
+        "Upload e redimensionamento de imagens (Sharp)",
+        "CRUD completo de Artigos e Usuários",
+        "Integração com MySQL via Prisma"
       ]
     },
+
     {
-      "id": "api-restful",
-      "title": "API RESTful",
-      "description": "API RESTful escalável desenvolvida com Laravel, incluindo autenticação JWT, documentação automática e testes.",
-      "longDescription": "API robusta seguindo padrões REST, com documentação completa, autenticação segura e cobertura de testes.",
-      "image": "/projects/api.jpg",
-      "tags": ["Laravel", "API", "JWT", "MySQL"],
-      "category": "Backend",
-      "github": "https://github.com/seuusuario/api-restful",
+      "id": "findit-mobile",
+      "title": "FindIt - Achados e Perdidos",
+      "description": "Aplicativo Android nativo para gestão e recuperação de objetos perdidos.",
+      "longDescription": "Solução móvel desenvolvida em Java com Android Studio para conectar pessoas que perderam objetos àquelas que os encontraram. O sistema utiliza a infraestrutura do Firebase (Auth e Firestore) para garantir autenticação segura e sincronização de dados em tempo real.",
+      "image": "/projects/findit.png",
+      "tags": [
+        "Java",
+        "Android Studio",
+        "Firebase Auth",
+        "Firestore",
+        "Mobile"
+      ],
+      "category": "Mobile",
+      "github": "https://github.com/KawanWan/findit_mobile",
       "demo": null,
-      "featured": false,
-      "year": 2023,
+      "featured": true,
+      "year": 2025,
       "features": [
-        "Autenticação JWT",
-        "Documentação Swagger",
-        "Rate limiting",
-        "Versionamento de API",
-        "Testes automatizados"
-      ]
-    },
-    {
-      "id": "dashboard-react",
-      "title": "Dashboard Analytics",
-      "description": "Dashboard interativo para visualização de dados com React e Chart.js, incluindo gráficos em tempo real.",
-      "longDescription": "Painel de controle moderno com visualização de dados em tempo real, gráficos interativos e interface intuitiva.",
-      "image": "/projects/dashboard.jpg",
-      "tags": ["React", "Chart.js", "TypeScript", "Tailwind"],
-      "category": "Frontend",
-      "github": "https://github.com/seuusuario/dashboard",
-      "demo": "https://dashboard-demo.vercel.app",
-      "featured": false,
-      "year": 2023,
-      "features": [
-        "Gráficos interativos",
-        "Atualização em tempo real",
-        "Filtros avançados",
-        "Exportação de dados",
-        "Interface responsiva"
+        "Autenticação de usuários via Firebase",
+        "Banco de dados NoSQL em tempo real (Firestore)",
+        "Cadastro de itens perdidos e encontrados",
+        "Interface Nativa Android",
+        "Sincronização na nuvem"
       ]
     }
   ],
@@ -133,14 +188,24 @@
       "position": "Desenvolvedor Full Stack",
       "period": "2023 - Presente",
       "description": "Desenvolvimento de aplicações web com Laravel e React, implementação de APIs RESTful e manutenção de sistemas legados.",
-      "technologies": ["Laravel", "React", "MySQL", "Docker"]
+      "technologies": [
+        "Laravel",
+        "React",
+        "MySQL",
+        "Docker"
+      ]
     },
     {
       "company": "Startup Digital",
       "position": "Desenvolvedor Backend",
       "period": "2022 - 2023",
       "description": "Desenvolvimento de APIs escaláveis, otimização de queries e implementação de microserviços.",
-      "technologies": ["PHP", "Node.js", "PostgreSQL", "Redis"]
+      "technologies": [
+        "PHP",
+        "Node.js",
+        "PostgreSQL",
+        "Redis"
+      ]
     }
   ],
   "education": [
