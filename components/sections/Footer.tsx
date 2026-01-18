@@ -115,7 +115,7 @@ export default function Footer({ name, social }: FooterProps) {
 
         <div className="border-t border-gray-800 pt-8 text-center">
           <p className="text-gray-400">
-            © {currentYear} {name}. Todos os direitos reservados.
+            © {currentYear} WanSystems. Todos os direitos reservados.
           </p>
           <p className="text-gray-500 text-sm mt-2">
             Desenvolvido com ❤️ usando Next.js e Tailwind CSS

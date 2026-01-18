@@ -55,7 +55,7 @@ export default function Hero({ name, title, subtitle, social }: HeroProps) {
           />
 
           <span className="text-base md:text-lg font-bold tracking-tight text-gray-200 group-hover:text-white transition-colors whitespace-nowrap">
-            Kawan<span className="text-sky-400">.</span>
+            WanSystems<span className="text-sky-400">.</span>
           </span>
         </div>
 
