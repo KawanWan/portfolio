@@ -104,6 +104,38 @@
   ],
   "projects": [
     {
+      "id": "production-control",
+      "title": "Sistema de Controle de Produção Industrial",
+      "description": "Sistema ERP customizado para gestão de chão de fábrica, controle de estoque e rastreabilidade.",
+      "longDescription": "Solução corporativa desenvolvida sob medida para o setor industrial. O sistema digitaliza o chão de fábrica, gerenciando desde a entrada de insumos até a expedição final. Foca em resolver gargalos de produção, garantir a rastreabilidade de lotes e fornecer métricas de produtividade em tempo real para a diretoria.",
+      "image": "/projects/controle-producao/production.png",
+      "gallery": [
+        "/projects/controle-producao/Dashboard Overview.png",
+        "/projects/controle-producao/Login System.png",
+        "/projects/controle-producao/OP Status.png",
+        "/projects/controle-producao/Operator Panel.png",
+        "/projects/controle-producao/Production History.png"
+      ],
+      "tags": [
+        "Node.js",
+        "MySQL",
+        "JavaScript",
+        "AWS"
+      ],
+      "category": "Full Stack",
+      "github": null,
+      "demo": null,
+      "featured": true,
+      "year": 2025,
+      "features": [
+        "Gestão de Ordens de Produção (OP) em tempo real",
+        "Rastreabilidade completa de lotes e matéria-prima",
+        "Controle de estoque e inventário",
+        "Dashboards gerenciais com KPIs de produtividade",
+        "Geração de relatórios e etiquetas industriais"
+      ]
+    },
+    {
       "id": "blog-platform",
       "title": "Blog Frontend",
       "description": "Plataforma moderna de blog desenvolvida com Next.js 15, React 19 e Tailwind CSS. Interface responsiva e otimizada para SEO.",
@@ -154,7 +186,6 @@
         "Integração com MySQL via Prisma"
       ]
     },
-
     {
       "id": "findit-mobile",
       "title": "FindIt - Achados e Perdidos",
